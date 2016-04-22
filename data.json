@@ -1,0 +1,21 @@
+{"3ctech":{"team":[
+				{"image":"/main.jpg",
+				 "name":"Jhonny",
+				 "role":"Web designer"},
+
+				{"image":"/main1.jpg",
+				 "name":"Walker",
+				 "role":"Backend"}],
+			"description":"best technical club"
+			},
+ "sufy":{"team":[
+				{"image":"/main.jpg",
+				 "name":"Jhonny",
+				 "role":"Web designer"},
+
+				{"image":"/main1.jpg",
+				 "name":"Walker",
+				 "role":"Backend"}],
+			"description":"best technical club"
+			}
+}
