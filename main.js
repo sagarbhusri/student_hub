@@ -1,10 +1,6 @@
 var express = require('express');
 var fs = require('fs');
-fs.readFile('data.json',(err,data)=>{
-		db = JSON.parse(data);
-		start_server();
-	})
-
+var db = require('./data.json');
 var app = express();
 
 app.use(express.static(__dirname+"/static"));
@@ -17,8 +13,6 @@ app.get('/event/:club_name', function (req, res) {
 	res.render('event_home',db[club_name])
 })
 
-function start_server(){
-  app.listen(8081, function () {
+app.listen(8081, function () {
   	console.log("Example app listening at http://localhost:8081")
 	})
-}
