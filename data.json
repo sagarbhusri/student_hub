@@ -2,20 +2,29 @@
 				{"image":"/main.jpg",
 				 "name":"Jhonny",
 				 "role":"Web designer"},
-
-				{"image":"/main1.jpg",
-				 "name":"Walker",
-				 "role":"Backend"}],
-			"description":"best technical club"
-			},
- "sufy":{"team":[
 				{"image":"/main.jpg",
 				 "name":"Jhonny",
 				 "role":"Web designer"},
-
+				{"image":"/main.jpg",
+				 "name":"Jhonny",
+				 "role":"Web designer"},
 				{"image":"/main1.jpg",
 				 "name":"Walker",
-				 "role":"Backend"}],
-			"description":"best technical club"
+				 "role":"fur"}
+		],	
+			"description":"3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry ",
+		"portfolio": [
+				{"image":"/main.jpg",
+				"name":"sagar"
+				},
+				{"image":"/main.jpg",
+				"name":"sagar"
+				},
+				{"image":"/main.jpg",
+				"name":"sagar"}]
 			}
+		
+
+	
+			
 }
