@@ -1,0 +1,156 @@
+doctype html
+html
+  title W3.CSS
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
+  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat')
+  link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css')
+  style.
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-navbar, label {font-family: "Montserrat", sans-serif}
+    .mySlides {display:none;}
+  body
+    // Navbar
+    .w3-top
+      ul.w3-navbar.w3-black.w3-theme-d2.w3-left-align.w3-large
+        li.w3-hide-medium.w3-hide-large.w3-opennav.w3-right
+          a.w3-hover-black.w3-large.w3-theme-d2(href='javascript:void(0);', onclick='openNav()')
+            i.fa.fa-bars
+        |   
+        li
+          a.w3-teal(href='club_main_page.html')
+            i.fa.fa-home.w3-margin-right
+            | About Us
+        |   
+        li.w3-hide-small
+          a(href='previousevent.html') Previous Events
+        |   
+        li.w3-hide-small
+          a(href='upcomingEvents.html') Upcoming Events
+        |  
+        li.w3-hide-small
+          a.w3-hover-white(href='#') Membership 
+        |    
+        li.w3-hide-small.w3-right
+          a.w3-hover-teal(href='#', title='Search')
+            i.fa.fa-search
+    // Navbar on small screens
+    // Page content
+    .w3-content(style='max-width:1800px;margin-top:46px')
+      .w3-row-padding.w3-padding-hor-32(style='margin:0 -16px')
+        .w3-third.w3-margin-bottom
+          img.w3-hover-opacity(src='crestock-50599-1280x960.jpg', alt='Norway', style='width:100%')
+          |           
+          .w3-container.w3-white
+            p
+              b New York
+            |             
+            p.w3-opacity Fri 27 Nov 2016
+            |             
+            p Venue
+        |         
+        .w3-third.w3-margin-bottom
+          img.w3-hover-opacity(src='crestock-50599-1280x960.jpg', alt='Norway', style='width:100%')
+          |           
+          .w3-container.w3-white
+            p
+              b Paris
+            |             
+            p.w3-opacity Sat 28 Nov 2016
+            |             
+            p Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+        |         
+        .w3-third.w3-margin-bottom
+          img.w3-hover-opacity(src='crestock-50599-1280x960.jpg', alt='Norway', style='width:100%')
+          |           
+          .w3-container.w3-white
+            p
+              b San Francisco
+            |             
+            p.w3-opacity Sun 29 Nov 2016
+            |             
+            p Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+        .w3-third.w3-margin-bottom
+          img.w3-hover-opacity(src='crestock-50599-1280x960.jpg', alt='Norway', style='width:100%')
+          |           
+          .w3-container.w3-white
+            p
+              b San Francisco
+            |             
+            p.w3-opacity Sun 29 Nov 2016
+            |             
+            p Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+    // Ticket Modal
+    #ticketModal.w3-modal
+      .w3-modal-content.w3-animate-top.w3-card-8
+        header.w3-container.w3-teal.w3-center.w3-padding-hor-32
+          span.w3-closebtn.w3-padding-xlarge.w3-xxlarge.w3-display-topright(onclick="document.getElementById('ticketModal').style.display='none'") &#xFFFD;
+          |         
+          h2.w3-wide
+            i.fa.fa-suitcase.w3-margin-right
+            | Tickets
+        |       
+        .w3-container
+          p
+            label
+              i.fa.fa-shopping-cart
+              |  Tickets, $15 per person
+          |         
+          input.w3-input.w3-border(type='text', placeholder='How many?')
+          |         
+          p
+            label
+              i.fa.fa-user
+              |  Send To
+          |         
+          input.w3-input.w3-border(type='text', placeholder='Enter email')
+          |         
+          button.w3-btn-block.w3-teal.w3-padding-hor-12.w3-section.w3-right
+            | PAY 
+            i.fa.fa-check
+          |         
+          button.w3-btn.w3-red.w3-section(onclick="document.getElementById('ticketModal').style.display='none'")
+            | Close 
+            i.fa.fa-remove
+          |         
+          p.w3-right
+            | Need 
+            a.w3-text-blue(href='javascript:void(0)') help?
+    // Footer
+    footer.w3-container.w3-padding-hor-64.w3-center.w3-opacity.w3-light-grey.w3-xlarge
+      a.w3-hover-text-indigo.w3-show-inline-block(href='#')
+        i.fa.fa-facebook-official
+      |   
+      a.w3-hover-text-red.w3-show-inline-block(href='#')
+        i.fa.fa-pinterest-p
+      |   
+      a.w3-hover-text-light-blue.w3-show-inline-block(href='#')
+        i.fa.fa-twitter
+      |   
+      a.w3-hover-text-grey.w3-show-inline-block(href='#')
+        i.fa.fa-flickr
+      |   
+      a.w3-hover-text-indigo.w3-show-inline-block(href='#')
+        i.fa.fa-linkedin
+      |   
+      p.w3-medium
+        | Powered by 
+        a(href='http://www.w3schools.com/w3css/default.asp', target='_blank') w3.css
+    script.
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      } else {
+      x.className = x.className.replace(" w3-show", "");
+      }
+      }
+      // When the user clicks anywhere outside of the modal, close it
+      var modal = document.getElementById('ticketModal');
+      window.onclick = function(event) {
+      if (event.target == modal) {
+      modal.style.display = "none";
+      }
+      }

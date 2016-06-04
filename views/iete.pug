@@ -1,0 +1,311 @@
+doctype html
+html
+  title W3.CSS
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3-theme-black.css')
+  link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css')
+  body#myPage
+    // Side Navigation on click
+    nav.w3-sidenav.w3-white.w3-card-2.w3-animate-left(style='display:none;z-index:2')
+      a.w3-closenav.w3-xxxlarge.w3-text-teal(href='javascript:void(0)', onclick='w3_close()')
+        | Close
+        i.fa.fa-remove
+      |   
+      a(href='javascript:void(0)') Gallery
+      | &#x9;&#x9;
+      |   
+      a(href='sufy.html', target='_blank') SUFY
+      | &#x9;&#x9;
+      |   
+      a(href='isotope.html', target='_blank') ISOTOPE
+      | &#x9;&#x9;
+      |   
+      a(href='cutc.html', target='_blank') CUT-C
+      | &#x9;&#x9;
+      |   
+      a(href='cuarcs.html', target='_blank') CU ARCS
+      |   
+      a(href='picit.html', target='_blank') PIC-IT
+      | &#x9;&#x9;
+      |   
+      a(href='staccatos.html', target='_blank') STACCATOS
+      | &#x9;&#x9;
+      |   
+      a(href='mystics.html', target='_blank') MYSTICS
+      | &#x9;&#x9;
+      |   
+      a(href='euphony.html', target='_blank') EUPHONY
+      |  
+      a(href='iete.html', target='_blank') IETE
+      | &#x9;&#x9;
+      |   
+      a(href='csi.html', target='_blank') CSI
+      | &#x9;&#x9;
+      |   
+      a(href='mathpirate.html', target='_blank') MATH PIRATE
+      | &#x9;&#x9;
+      |   
+      a(href='civings.html', target='_blank') CIVINGS
+      |  
+      a(href='3ctech.html', target='_blank') 3C-TECH
+      |  
+      |   
+      a(href='1.html') BACK
+    // Navbar
+    .w3-top
+      ul.w3-navbar.w3-theme-d2.w3-left-align.w3-large
+        li.w3-hide-medium.w3-hide-large.w3-opennav.w3-right
+          a.w3-hover-white.w3-large.w3-theme-d2(href='javascript:void(0);', onclick='openNav()')
+            i.fa.fa-bars
+        |   
+        li
+          a.w3-teal(href='iete.html')
+            i.fa.fa-home.w3-margin-right
+            | About Us
+        |   
+        li.w3-hide-small
+          a(href='previousevent.html') Previous Events
+        |   
+        li.w3-hide-small
+          a(href='upcomingEvents.html') Upcoming Events
+        |  
+        li.w3-hide-small
+          a.w3-hover-white(href='#') Membership 
+        |    
+        li.w3-hide-small.w3-right
+          a.w3-hover-teal(href='#', title='Search')
+            i.fa.fa-search
+    // Automatic Slideshow Images
+    .mySlides.w3-display-container
+      img.testimg(src='main1.jpg', alt='boat', style='width:100%;min-height:300px;max-height:400px;')
+      |  
+      .w3-container.w3-display-bottomleft.w3-margin-bottom
+        button.w3-btn.w3-xlarge.w3-theme.w3-hover-teal(onclick="document.getElementById('id01').style.display='block'", title='Go To W3.CSS') LEARN W3.
+    |   
+    .mySlides.w3-display-container
+      img.testimg(src='main.jpg', alt='boat', style='width:100%;min-height:300px;max-height:400px;')
+      .w3-container.w3-display-bottomleft.w3-margin-bottom
+        button.w3-btn.w3-xlarge.w3-theme.w3-hover-teal(onclick="document.getElementById('id01').style.display='block'", title='Go To W3.CSS') LEARN W3.S
+    |   
+    .mySlides.w3-display-container
+      img.testimg(src='main2.jpg', alt='boat', style='width:100%;min-height:300px;max-height:400px;')
+      .w3-container.w3-display-bottomleft.w3-margin-bottom
+        button.w3-btn.w3-xlarge.w3-theme.w3-hover-teal(onclick="document.getElementById('id01').style.display='block'", title='Go To W3.CSS') LEARN W3.CS
+    // Modal
+    #id01.w3-modal.w3-animate-opacity
+      .w3-modal-content.w3-card-8.w3-animate-top
+        header.w3-container.w3-teal
+          span.w3-closebtn(onclick="document.getElementById('id01').style.display='none'")
+            i.fa.fa-remove
+          |         
+          h4 Oh snap! We just showed you a modal..
+          |         
+          h5
+            | Because we can 
+            i.fa.fa-smile-o
+        |       
+        .w3-container
+          p Cool huh? Ok, enough teasing around..
+          |         
+          p
+            | Go to our 
+            a.w3-btn(href='/w3css/default.asp') W3.CSS Tutorial
+            |  to learn more!
+        |       
+        footer.w3-container.w3-teal
+          p Modal footer
+    // Container
+    .w3-container.w3-padding-hor-64.w3-center
+      h2 OUR TEAM
+      | &#x9;
+      p Meet the team - our office rats:
+      | &#x9;&#x9;&#x9;&#x9;
+      .w3-row
+        br
+        .w3-quarter
+          img.w3-circle.w3-hover-opacity(src='img_avatar.jpg', alt='Boss', style='width:45%')
+          |   
+          h3 Johnny Walker
+          |   
+          p Web Designer
+        .w3-quarter
+          img.w3-circle.w3-hover-opacity(src='img_avatar.jpg', alt='Boss', style='width:45%')
+          |   
+          h3 Rebecca Flex
+          |   
+          p Support
+        .w3-quarter
+          img.w3-circle.w3-hover-opacity(src='img_avatar.jpg', alt='Boss', style='width:45%')
+          |   
+          h3 Jan Ringo
+          |   
+          p Boss man
+        .w3-quarter
+          img.w3-circle.w3-hover-opacity(src='img_avatar.jpg', alt='Boss', style='width:45%')
+          |   
+          h3 Kai Ringo
+          |   
+          p Fixer
+    // Row
+    .w3-row-padding.w3-padding-hor-64.w3-theme-l1
+      .w3-quarter
+        h2 Our Portfolio
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .w3-quarter
+        .w3-card-2.w3-white
+          img(src='img_fjords.jpg', alt='Vernazza', style='width:100%')
+          |   
+          .w3-container
+            h3 Customer 1
+            |   
+            h4 Trade
+            |   
+            p Blablabla
+            |   
+            p Blablabla
+            |   
+            p Blablabla
+            |   
+            p Blablabla
+      .w3-quarter
+        .w3-card-2.w3-white
+          img(src='img_lights.jpg', alt='Cinque Terre', style='width:100%')
+          |   
+          .w3-container
+            h3 Customer 2
+            |   
+            h4 Trade
+            |   
+            p Blablabla
+            |   
+            p Blablabla
+            |   
+            p Blablabla
+            |   
+            p Blablabla
+      .w3-quarter
+        .w3-card-2.w3-white
+          img(src='img_mountains.jpg', alt='Monterosso', style='width:100%')
+          |   
+          .w3-container
+            h3 Customer 3
+            |   
+            h4 Trade
+            |   
+            p Blablabla
+            |   
+            p Blablabla
+            |   
+            p Blablabla
+            |   
+            p Blablabla
+    .w3-container(style='position:relative')
+      a.w3-btn-floating-large.w3-teal(onclick='w3_open()', style='position:absolute;top:-28px;right:24px;z-index:0;')
+        i.fa.fa-plus
+    // Container
+    .w3-container.w3-padding-hor-64.w3-theme-l5
+      .w3-row
+        .w3-col.m5
+          .w3-padding-hor-16
+            span.w3-xlarge.w3-border-teal.w3-bottombar Contact Us
+          |       
+          h3 Address
+          |       
+          p Swing by for a cup of coffee, or whatever.
+          |       
+          p
+            i.fa.fa-map-marker.w3-text-teal.w3-xlarge
+            |   Chicago, US
+          |       
+          p
+            i.fa.fa-phone.w3-text-teal.w3-xlarge
+            |   +00 1515151515
+          |       
+          p
+            i.fa.fa-envelope-o.w3-text-teal.w3-xlarge
+            |   test@test.com
+        |     
+        .w3-col.m7
+          form.w3-container.w3-card-4.w3-padding-hor-16.w3-white
+            .w3-group
+              label.w3-label Name
+              |         
+              input.w3-input(type='text')
+            |       
+            .w3-group
+              label.w3-label Email
+              |         
+              input.w3-input(type='text')
+            |       
+            .w3-group
+              label.w3-label Subject
+              |         
+              input.w3-input(type='text')
+            |   
+            |       
+            input.w3-check(type='checkbox', checked='')
+            |       
+            label.w3-validate I Like it!
+            |       
+            button.w3-btn.w3-right.w3-theme(type='button') Send
+    // Footer
+    footer.w3-container.w3-padding-hor-32.w3-theme-d1.w3-center
+      h4 Follow Us
+      |   
+      a.w3-btn-floating.w3-teal(href='javascript:void(0)', title='Facebook')
+        i.fa.fa-facebook
+      |   
+      a.w3-btn-floating.w3-teal(href='javascript:void(0)', title='Twitter')
+        i.fa.fa-twitter
+      |   
+      a.w3-btn-floating.w3-teal(href='javascript:void(0)', title='Google +')
+        i.fa.fa-google-plus
+      |   
+      a.w3-btn-floating.w3-teal.w3-hide-small(href='javascript:void(0)', title='Linkedin')
+        i.fa.fa-linkedin
+      |  
+      |   
+      .w3-tooltip.w3-right(style='position:relative;bottom:50px;z-index:1;')
+        span.w3-text.w3-padding.w3-teal.w3-hide-small Go To Top
+        |    
+        |     
+        a.w3-btn.w3-theme(href='#myPage')
+          span.w3-xlarge
+            i.fa.fa-chevron-circle-up
+    // Script For Side Navigation
+    script.
+      function w3_open() {
+      document.getElementsByClassName("w3-sidenav")[0].style.width = "300px";
+      document.getElementsByClassName("w3-sidenav")[0].style.textAlign = "center";
+      document.getElementsByClassName("w3-sidenav")[0].style.fontSize = "40px";
+      document.getElementsByClassName("w3-sidenav")[0].style.paddingTop = "10%";
+      document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+      }
+      function w3_close() {
+      document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+      }
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      } else {
+      x.className = x.className.replace(" w3-show", "");
+      }
+      }
+      // Automatic Slideshow - change image every 4 seconds
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 4000);
+      }

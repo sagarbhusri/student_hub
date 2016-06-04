@@ -9,7 +9,7 @@ app.set('views',__dirname+'/views')
 
 app.get('/event/:club_name', function (req, res) {
 	var club_name = req.params.club_name
-	console.log(db[club_name])
+	//console.log(db[club_name])
 	res.render('event_home',db[club_name])
 })
 
