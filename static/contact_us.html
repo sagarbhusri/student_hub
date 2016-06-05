@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<title>contact us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<body id="myPage">
+
+<!-- Side Navigation on click -->
+<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none;z-index:2">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xxxlarge w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="javascript:void(0)">Link 1</a>		
+  <a href="javascript:void(0)">Link 2</a>		
+  <a href="javascript:void(0)">Link 3</a>		
+  <a href="javascript:void(0)">Link 4</a>		
+  <a href="javascript:void(0)">Link 5</a>		
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="1.html" class="w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+<li class="w3-hide-small w3-dropdown-hover">
+    <a href="#" class="w3-hover-white" title="Notifications">University Affairs <i class="fa fa-caret-down"></i></a>     
+     <div class="w3-dropdown-content w3-white w3-card-4">
+     <a href="sufy.html">SUFY</a>
+     <a href="cutc.html">CUTC</a>
+     <a href="mystics.html">MYSTICS</a>
+     <a href="csi.html">CSI</a>
+     <a href="isotope.html">CU ISOTOPES</a>
+     <a href="civings.html">CIVINGS</a>
+     <a href="picit.html">PIC IT</a>
+     <a href="3ctech.html">3C TECH</a>
+     <a href="staccatos.html">STACCATOS</a>
+<a href="euphony.html">EUPHONY</a>
+      <a href="iete.html">IETE</a>
+      <a href="mathpirate.html">MATH PIRATES</a>
+    </div>
+  </li>
+
+  <li class="w3-hide-small"><a href="#" class="w3-hover-white">Gallery</a></li>
+    <li class="w3-hide-small"><a href="#" class="w3-hover-white">Contact Us</a></li>
+  <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-teal" title="Search"><i class="fa fa-search"></i></a></li>
+ </ul>
+</div>
+
+
+
+
+<!-- Container -->
+<div class="w3-container w3-padding-hor-64 w3-theme-l5">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-hor-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chitkara University,Himachal Pradesh :<br>Pinjore-Barotiwala National Highway (NH-21A)<br>
+Himachal Pradesh – 174 103 </p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +91 9882497907</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  info@chitkarauniversity.edu.in</p>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"></div>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:5,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-hor-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-btn-floating w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>				
+</footer>
+
+<!-- Script For Side Navigation -->
+<script>
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.width = "300px";
+    document.getElementsByClassName("w3-sidenav")[0].style.textAlign = "center";
+    document.getElementsByClassName("w3-sidenav")[0].style.fontSize = "40px";
+    document.getElementsByClassName("w3-sidenav")[0].style.paddingTop = "10%";
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+}
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
