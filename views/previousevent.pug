@@ -19,15 +19,15 @@ html
             i.fa.fa-bars
         |   
         li
-          a.w3-teal(href='club_main_page.html')
+          a.w3-teal(href='/'+club_name+'/home')
             i.fa.fa-home.w3-margin-right
             | About Us
         |   
         li.w3-hide-small
-          a(href='../event/previous') Previous Events
+          a(href='/'+club_name+'/event/previous') Previous Events
         |   
         li.w3-hide-small
-          a(href='../event/upcoming') Upcoming Events
+          a(href='/'+club_name+'/event/upcoming') Upcoming Events
         |  
         li.w3-hide-small
           a.w3-hover-white(href='#') Membership 
@@ -152,5 +152,4 @@ html
       window.onclick = function(event) {
       if (event.target == modal) {
       modal.style.display = "none";
-      }
-      }
+      }}
