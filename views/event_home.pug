@@ -136,23 +136,17 @@ body#myPage
       h2 Our Portfolio 	
       h  
         |  #{description}
-  each member in portfolio  	
-    .w3-quarter
-      .w3-card-2.w3-white
-        img(src=member.image, alt='Vernazza', style='width:100%')
-        |   
-        .w3-container
-          h3 Customer 1
+    each member in portfolio    
+      .w3-quarter
+        .w3-card-2.w3-white
+          img(src=member.image, alt='Vernazza', style='width:100%')
           |   
-          h4 Trade
-          |   
-          p= member.name
-          |   
-          p= member.name
-          |   
-          p= member.name
-          |   
-          p Blablabla
+          .w3-container
+            h3 Customer 1
+            |   
+            h4 Trade
+            |   
+            p= member.name
   w3-container(style='position:relative')
     a.w3-btn-floating-large.w3-teal(onclick='w3_open()', style='position:absolute;top:-28px;right:24px;z-index:0;')
       i.fa.fa-plus
