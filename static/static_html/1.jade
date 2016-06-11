@@ -1,0 +1,130 @@
+doctype html
+html
+  title CHITKARA UNIVERSITY
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+  |  
+  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
+  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat')
+  link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css')
+  style.
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+  body
+    // Navbar
+    .w3-top
+      ul.w3-navbar.w3-theme-d2.w3-left-align.w3-large
+        li.w3-hide-medium.w3-hide-large.w3-opennav.w3-right
+          a.w3-hover-white.w3-large.w3-theme-d2(href='javascript:void(0);', onclick='openNav()')
+            i.fa.fa-bars
+        |   
+        li
+          a.w3-teal(href='1.html')
+            i.fa.fa-home.w3-margin-right
+            | Home
+        li.w3-hide-small.w3-dropdown-hover
+          a.w3-hover-white(href='#', title='Notifications')
+            | Clubs
+            i.fa.fa-caret-down
+          |      
+          |     
+          .w3-dropdown-content.w3-black.w3-card-4
+            a(href='sufy.html') SUFY
+            |       
+            a(href='cutc.html') CUTC
+            |       
+            a(href='mystics.html') MYSTICS
+            |       
+            a(href='csi.html') CSI
+            |       
+            a(href='isotope.html') CU ISOTOPES
+            |       
+            a(href='civings.html') CIVINGS
+            |       
+            a(href='picit.html') PIC IT
+            |       
+            a(href='3ctech.html') 3C TECH
+            |       
+            a(href='staccatos.html') STACCATOS
+            a(href='euphony.html') EUPHONY
+            |       
+            a(href='iete.html') IETE
+            |       
+            a(href='mathpirate.html') MATH PIRATES
+        |   
+        li.w3-hide-small
+          a.w3-hover-white(href='#') Gallery
+        |     
+        li.w3-hide-small
+          a.w3-hover-white(href='contact_us.html') Contact Us
+        |   
+        li.w3-hide-small.w3-right
+          a.w3-hover-teal(href='#', title='Search')
+            i.fa.fa-search
+    // Header
+    .w3-container.w3-red.w3-center.w3-padding-hor-128
+      h1.w3-margin.w3-jumbo CHITKARA UNIVERSITY
+      |   
+      p.w3-xlarge
+        img(src='logo.png', style='width:25%')
+      |   
+      button.w3-btn.w3-padding-hor-16.w3-padding-ver-32.w3-large.w3-margin-top Get Started
+    // First Grid
+    .w3-row-padding.w3-padding-hor-64.w3-container
+      .w3-content
+        .w3-twothird
+          h1 Chitkara University
+          |       
+          h5.w3-padding-hor-32
+            | Chitkara University in Himahcal Pradesh has been founded by Dr. Ashok Chitkara and Dr. Madhu Chitkara who have been passionate teachers for more than 40 years now. Since inception, Chitkara University has been different.
+          |       
+          p.w3-text-grey
+            | Chitkara University in Himahcal Pradesh has been founded by Dr. Ashok Chitkara and Dr. Madhu Chitkara who have been passionate teachers for more than 40 years now. Since inception, Chitkara University has been different. Our students have been different. So are our faculty, our academic strengths and our outlook on teaching and learning.
+            | Within a decade, most of our academic programs are ranked in top 50 programs in the country. The unique difference being that Chitkara University has been established by and managed by passionate academicians with the sole mission of making each and every student &#xFFFD;industry-ready&quot;.
+        |     
+        .w3-third.w3-center
+          i.fa.fa-anchor.w3-padding-hor-64.w3-text-red
+    // Second Grid
+    .w3-row-padding.w3-light-grey.w3-padding-hor-64.w3-container
+      .w3-content
+        .w3-third.w3-center
+          i.fa.fa-coffee.w3-padding-hor-64.w3-text-red.w3-margin-right
+        |     
+        .w3-twothird
+          h1 Chitkara University
+          |       
+          h5.w3-padding-hor-32
+            | Chitkara University in Himahcal Pradesh has been founded by Dr. Ashok Chitkara and Dr. Madhu Chitkara who have been passionate teachers for more than 40 years now. Since inception, Chitkara University has been different.
+          |       
+          p.w3-text-grey
+            | Chitkara University in Himahcal Pradesh has been founded by Dr. Ashok Chitkara and Dr. Madhu Chitkara who have been passionate teachers for more than 40 years now. Since inception, Chitkara University has been different.
+    .w3-container.w3-black.w3-center.w3-opacity.w3-padding-hor-64
+      h1.w3-margin.w3-xlarge EXPLORE YOUR POTENTIAL
+    // Footer
+    footer.w3-container.w3-padding-hor-64.w3-center.w3-opacity
+      .w3-xlarge.w3-padding-hor-32
+        a.w3-hover-text-indigo.w3-show-inline-block(href='#')
+          i.fa.fa-facebook-official
+        |    
+        a.w3-hover-text-red.w3-show-inline-block(href='#')
+          i.fa.fa-pinterest-p
+        |    
+        a.w3-hover-text-light-blue.w3-show-inline-block(href='#')
+          i.fa.fa-twitter
+        |    
+        a.w3-hover-text-grey.w3-show-inline-block(href='#')
+          i.fa.fa-flickr
+        |    
+        a.w3-hover-text-indigo.w3-show-inline-block(href='#')
+          i.fa.fa-linkedin
+    script.
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      } else {
+      x.className = x.className.replace(" w3-show", "");
+      }
+      }

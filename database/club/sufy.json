@@ -1,0 +1,55 @@
+{
+    "team": [
+        {
+            "image": "/main.jpg",
+            "name": "Simerpreet",
+            "role": "President"
+        },
+        {
+            "image": "/main.jpg",
+            "name": "Tanveer",
+            "role": "Vice-President"
+        },
+        {
+            "image": "/main.jpg",
+            "name": "Haneesha",
+            "role": "General Secretary"
+        },
+        {
+            "image": "/main1.jpg",
+            "name": "Shobhita",
+            "role": "Joint  Secretary"
+        },
+        {
+            "image": "",
+            "name": "",
+            "role": ""
+        },
+        {
+            "image": "/main1.jpg",
+            "name": "Harshita",
+            "role": "Treasurer"
+        },
+        {
+            "image": "/main1.jpg",
+            "name": "Ms.Shefali Batra",
+            "role": "Faculty In-Charge"
+        }
+    ],
+    "description": "The Sufy Club of Chitkara University is a literary club involved in variety of activities aimed at building up the confidence and grooming the talents of students in facing various interpersonal activities and competitions. It is a voluntary association of students interested in writing, speaking and expressing their original views and ideas on the various platforms.",
+    "portfolio": [
+        {
+            "image": "/main.jpg",
+            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+        },
+        {
+            "image": "/main.jpg",
+            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+        },
+        {
+            "image": "/main.jpg",
+            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+        }
+    ],
+    "name": "sufy"
+}

@@ -1,0 +1,16 @@
+Useful Tools
+Sublime:
+	jsontree : to code fold json structures
+	jade,pug : for syntax highlighting in pug and/or jade files
+	expressjs : express code snippets
+
+Node:
+	nodemon
+		description : monitor and restart node apps on source code change
+		installation : npm i -g nodemon
+		usage : "nodemon main.js: instead of "node main.js"
+
+	html2pug
+		description : cli utility to convert html pages to pug format
+		installation : npm i -g html2pug
+		usage : 
