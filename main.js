@@ -29,6 +29,18 @@ app.all('/',function(req,res) {
 	}
 });
 
+app.get('/news',function(req,res) {
+	res.render('news');
+});
+
+app.get('/gallery',function(req,res) {
+	res.render('gallery')
+});
+
+app.get('/front',function(req,res) {
+	res.render('front');
+});
+
 app.get('/:club_name/home', function (req, res) {
 	var club_name = req.params.club_name
 	res.render('event_home',db.club.read(club_name))

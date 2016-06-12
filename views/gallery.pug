@@ -1,0 +1,287 @@
+doctype 1.1
+html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en')
+  head
+    title ARaynorDesign Template
+    |   
+    meta(name='description', content='free website template')
+    |   
+    meta(name='keywords', content='enter your keywords here')
+    |   
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    |   
+    meta(http-equiv='X-UA-Compatible', content='IE=9')
+    |   
+    link(href='/resources/css/gallery.css', rel='stylesheet', type='text/css')
+    |   
+    link(href='/resources/css/portfolio.css', rel='stylesheet', type='text/css')
+    |   
+    link(href='/resources/css/dark.css', rel='stylesheet', type='text/css')
+    |   
+    script(type='text/javascript', src='/resources/js/jquery.min.js')
+    |   
+    script(type='text/javascript', src='/resources/js/jquery.galleriffic.js')
+    |   
+    script(type='text/javascript', src='/resources/js/jquery.opacityrollover.js')
+    |   
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      // we only want these styles applied when javascript is enabled
+      $('div.content').css('display', 'block');
+      // initially set opacity on thumbs and add additional styling for hover effect on thumbs
+      var onMouseOutOpacity = 0.67;
+      $('#thumbs ul.thumbs li, div.navigation a.pageLink').opacityrollover({
+      mouseOutOpacity:   onMouseOutOpacity,
+      mouseOverOpacity:  1.0,
+      fadeSpeed:         'fast',
+      exemptionSelector: '.selected'
+      });
+      // initialize advanced galleriffic gallery
+      var gallery = $('#thumbs').galleriffic({
+      delay:                     3500,
+      numThumbs:                 10,
+      preloadAhead:              10,
+      enableTopPager:            false,
+      enableBottomPager:         false,
+      imageContainerSel:         '#slideshow',
+      controlsContainerSel:      '#controls',
+      captionContainerSel:       '#caption',
+      loadingContainerSel:       '#loading',
+      renderSSControls:          true,
+      renderNavControls:         true,
+      playLinkText:              'Play Slideshow',
+      pauseLinkText:             'Pause Slideshow',
+      prevLinkText:              '&lsaquo; Previous Photo',
+      nextLinkText:              'Next Photo &rsaquo;',
+      nextPageLinkText:          'Next &rsaquo;',
+      prevPageLinkText:          '&lsaquo; Prev',
+      enableHistory:             true,
+      autoStart:                 false,
+      syncTransitions:           true,
+      defaultTransitionDuration: 900,
+      onSlideChange:             function(prevIndex, nextIndex) {
+      // 'this' refers to the gallery, which is an extension of $('#thumbs')
+      this.find('ul.thumbs').children()
+      .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+      .eq(nextIndex).fadeTo('fast', 1.0);
+      // update the photo index display
+      this.$captionContainer.find('div.photo-index')
+      .html('Photo '+ (nextIndex+1) +' of '+ this.data.length);
+      },
+      onPageTransitionOut:       function(callback) {
+      this.fadeTo('fast', 0.0, callback);
+      },
+      onPageTransitionIn:        function() {
+      var prevPageLink = this.find('a.prev').css('visibility', 'hidden');
+      var nextPageLink = this.find('a.next').css('visibility', 'hidden');
+      // show appropriate next / prev page links
+      if (this.displayedPage > 0)
+      prevPageLink.css('visibility', 'visible');
+      var lastPage = this.getNumPages() - 1;
+      if (this.displayedPage < lastPage)
+      nextPageLink.css('visibility', 'visible');
+      this.fadeTo('fast', 1.0);
+      }
+      });
+      // event handlers for custom next / prev page links
+      gallery.find('a.prev').click(function(e) {
+      gallery.previousPage();
+      e.preventDefault();
+      });
+      gallery.find('a.next').click(function(e) {
+      gallery.nextPage();
+      e.preventDefault();
+      });
+      });
+  body
+    #main
+      #header
+        #welcome
+          h1
+            span YOUR
+            |  GALLERY
+        // end welcome
+        #menubar
+          ul#menu
+            li.current
+              a(href='index.html') Home
+            |           
+            li
+              a(href='ourwork.html') Our Work
+            |           
+            li
+              a(href='testimonials.html') Testimonials
+            |           
+            li
+              a(href='projects.html') Projects
+            |           
+            li
+              a(href='contact.html') Contact Us
+        // end menubar
+      // end header
+      #site_content
+        #image_container
+          // start gallery HTML containers
+          .navigation-container
+            #thumbs.navigation
+              a.pageLink.prev(style='visibility: hidden;', href='#', title='Previous Page')
+              |           
+              ul.thumbs.noscript
+                li
+                  a.thumb(href='/resources/images/1.jpg')
+                    img(src='/resources/images/1_thumb.jpg', alt='one')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/2.jpg')
+                    img(src='/resources/images/2_thumb.jpg', alt='two')
+                  |               
+                  .caption
+                    .image-title.portfolio_two Another picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/3.jpg')
+                    img(src='/resources/images/3_thumb.jpg', alt='three')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A third picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/4.jpg')
+                    img(src='/resources/images/4_thumb.jpg', alt='four')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A picture of some apartments
+                |             
+                li
+                  a.thumb(href='/resources/images/1.jpg')
+                    img(src='/resources/images/1_thumb.jpg', alt='one')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/2.jpg')
+                    img(src='/resources/images/2_thumb.jpg', alt='two')
+                  |               
+                  .caption
+                    .image-title.portfolio_two Another picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/3.jpg')
+                    img(src='/resources/images/3_thumb.jpg', alt='three')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A third picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/4.jpg')
+                    img(src='/resources/images/4_thumb.jpg', alt='four')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A picture of some apartments
+                |             
+                li
+                  a.thumb(href='/resources/images/1.jpg')
+                    img(src='/resources/images/1_thumb.jpg', alt='one')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/2.jpg')
+                    img(src='/resources/images/2_thumb.jpg', alt='two')
+                  |               
+                  .caption
+                    .image-title.portfolio_two Another picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/3.jpg')
+                    img(src='/resources/images/3_thumb.jpg', alt='three')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A third picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/4.jpg')
+                    img(src='/resources/images/4_thumb.jpg', alt='four')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A picture of some apartments
+                |             
+                li
+                  a.thumb(href='/resources/images/1.jpg')
+                    img(src='/resources/images/1_thumb.jpg', alt='one')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/2.jpg')
+                    img(src='/resources/images/2_thumb.jpg', alt='two')
+                  |               
+                  .caption
+                    .image-title.portfolio_two Another picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/3.jpg')
+                    img(src='/resources/images/3_thumb.jpg', alt='three')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A third picture of an office building
+                |             
+                li
+                  a.thumb(href='/resources/images/4.jpg')
+                    img(src='/resources/images/4_thumb.jpg', alt='four')
+                  |               
+                  .caption
+                    .image-title.portfolio_two A picture of some apartments
+              |           
+              a.pageLink.next(style='visibility: hidden;', href='#', title='Next Page')
+          |       
+          .content
+            .slideshow-container
+              #loading.loader
+              |           
+              #slideshow.slideshow
+              |           
+              #controls.controls.portfolio_two
+              |           
+              #caption.caption-container
+          // end gallery HTML containers
+        // end image_container
+      // end site_content
+    // end main
+    #footer
+      #footer_container
+        .footer_container_box
+          h4 Latest Work
+          | &#x9;    
+          p  Phasellus laoreet feugiat risus. Ut tincidunt, ante vel fermentum iaculis.
+          | &#x9;&#x9;  
+          a(href='ourwork.html') Read more
+        // close footer_container_box
+        .footer_container_box
+          h4 Latest Testimonials
+          | &#x9;    
+          p  Phasellus laoreet feugiat risus. Ut tincidunt, ante vel fermentum iaculis.
+          | &#x9;&#x9;  
+          a(href='testimonials.html') Read more
+        // close footer_container_box
+        .footer_container_boxl
+          h4 Latest Projects
+          | &#x9;    
+          p  Phasellus laoreet feugiat risus. Ut tincidunt, ante vel fermentum iaculis.
+          | &#x9;&#x9;  
+          a(href='projects.html') Read more
+        // close footer_container_box1
+        br(style='clear:both')
+        | &#x9;  
+        br
+        |     
+        a(href='http://fotogrph.com/') Images
+        |  | website template by 
+        a(href='http://www.araynordesign.co.uk') ARaynorDesign
+      // close footer_container
+    // close footer
