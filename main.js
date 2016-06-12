@@ -23,7 +23,7 @@ app.all('/',function(req,res) {
 	case 'POST':var userid=req.body.userid
 				if(db.user.read(userid).password == req.body.password){
 					req.session.user = {id:req.body.userid}
-					res.redirect("/3ctech/home");
+					res.redirect("/front/");
 				}
 				break;
 	}
@@ -54,7 +54,10 @@ app.get('/:club_name/event/:query',function (req,res) {
 		res.render('previousevent',{club_name:club_name})
 	else if(query=="upcoming")
 		res.render('upcomingevent',{club_name:club_name})
+	else if(query=="name")
+		res.render('event_home',db.club.read(club_name))
 	}
+
 )
 app.listen(8081, function () {
   	util.log("Server listening at http://localhost:8081")

@@ -2,5 +2,15 @@
 	"b130010012":{"firstname":"sagar",
 				  "lastname":"bhusri",
 				  "password":"password",
+				  "password_hash":""},
+
+	"b130010013":{"firstname":"shelly",
+				  "password":"password",
+				  "password_hash":""},
+	
+	"b130010003":{"firstname":"shubham",
+				  "lastname":"vohra",
+				  "password":"password",
 				  "password_hash":""}
+
 }

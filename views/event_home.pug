@@ -60,7 +60,7 @@ body#myPage
           i.fa.fa-bars
       |   
       li
-        a.w3-teal(href='/'+club_name+'/home')
+        a.w3-teal(href='/'+club_name+'/event')
           i.fa.fa-home.w3-margin-right
           | About Us
       |   
@@ -71,11 +71,14 @@ body#myPage
         a(href='/'+club_name+'/event/upcoming') Upcoming Events
       |  
       li.w3-hide-small
+        a.w3-hover-white(href='#') Gallery
+      |  
+      li.w3-hide-small
         a.w3-hover-white(href='#') Membership 
-      |    
-      li.w3-hide-small.w3-right
-        a.w3-hover-teal(href='#', title='Search')
-          i.fa.fa-search
+      | 
+      li.w3-hide-small
+        a.w3-hover-white(href='#') Home   
+     
   // Automatic Slideshow Images
   .mySlides.w3-display-container
     img.testimg(src='/main1.jpg', alt='boat', style='width:100%;min-height:300px;max-height:400px;')
