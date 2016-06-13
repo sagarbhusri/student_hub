@@ -38,56 +38,20 @@ html
     // Page content
     .w3-content(style='max-width:1800px;margin-top:46px')
       .w3-row-padding.w3-padding-hor-32(style='margin:0 -16px')
-        .w3-third.w3-margin-bottom
-          img.w3-hover-opacity(src='crestock-50599-1280x960.jpg', alt='Norway', style='width:100%')
-          |           
-          .w3-container.w3-white
-            p
-              b New York
-            |             
-            p.w3-opacity Fri 27 Nov 2016
-            |             
-            p Venue
-            |             
-            button.w3-btn.w3-margin-bottom(onclick="document.getElementById('ticketModal').style.display='block'") Register Now
-        |         
-        .w3-third.w3-margin-bottom
-          img.w3-hover-opacity(src='crestock-50599-1280x960.jpg', alt='Norway', style='width:100%')
-          |           
-          .w3-container.w3-white
-            p
-              b Paris
-            |             
-            p.w3-opacity Sat 28 Nov 2016
-            |             
-            p Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-            |             
-            button.w3-btn.w3-margin-bottom(onclick="document.getElementById('ticketModal').style.display='block'") Register Now
-        |         
-        .w3-third.w3-margin-bottom
-          img.w3-hover-opacity(src='crestock-50599-1280x960.jpg', alt='Norway', style='width:100%')
-          |           
-          .w3-container.w3-white
-            p
-              b San Francisco
-            |             
-            p.w3-opacity Sun 29 Nov 2016
-            |             
-            p Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-            |             
-            button.w3-btn.w3-margin-bottom(onclick="document.getElementById('ticketModal').style.display='block'") Register Now
-        .w3-third.w3-margin-bottom
-          img.w3-hover-opacity(src='crestock-50599-1280x960.jpg', alt='Norway', style='width:100%')
-          |           
-          .w3-container.w3-white
-            p
-              b San Francisco
-            |             
-            p.w3-opacity Sun 29 Nov 2016
-            |             
-            p Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-            |             
-            button.w3-btn.w3-margin-bottom(onclick="document.getElementById('ticketModal').style.display='block'") Register Now
+        each event in event_list
+          .w3-third.w3-margin-bottom
+            img.w3-hover-opacity(src=event.image || 'null', alt='Norway', style='width:100%')
+            |           
+            .w3-container.w3-white
+              p
+                b= event.title
+              |             
+              p.w3-opacity= event.datetime
+              |             
+              p= event.description
+              |             
+              button.w3-btn.w3-margin-bottom(onclick="document.getElementById('ticketModal').style.display='block'") Register Now  
+
     // Ticket Modal
     #ticketModal.w3-modal
       .w3-modal-content.w3-animate-top.w3-card-8
