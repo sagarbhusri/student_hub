@@ -55,5 +55,18 @@
     "events": {
         "upcoming": [],
         "previous": []
-    }
+    },
+    "new":[{
+                                            date:{year:"2016",month:"June",day:"10"},
+                                            title:"Demise of IT industry",
+                                            para:["semper ac, venenatis at, facilisis ac,\
+                                                    magna. Etiam ac enim. Sed pellentesque euismod\
+                                                    elit. Mauris auctor ultrices massa. Praesent eget\
+                                                    erat ut turpis aliquet viverra. Nullam consectetuer,\
+                                                    risus ut condimentum dictum, tortor urna placerat \
+                                                    leo, eleifend dictum lacus purus at tortor.\
+                                                    Integer pulvinar. Etiam eget leo eget turpis imperdiet\
+                                                     dic."]
+                                            }
+                                        ]   
 }

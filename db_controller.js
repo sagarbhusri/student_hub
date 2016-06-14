@@ -44,7 +44,7 @@ db={club:{  info:{},
 				}
 		},
 	user:{data:require('./database/user.json'),
-			read:(user_id)=>{
+			read:function(user_id){
 				return this.data[user_id];
 			}}
 	}

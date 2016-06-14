@@ -17,6 +17,10 @@ app.use(express.static(__dirname+"/static"));
 app.set('view engine','pug')
 app.set('views',__dirname+'/views')
 
+app.get('/front',function(req,res) {
+	res.render('front');
+});
+
 app.all('/',function(req,res) {
 	util.log("PID: "+process.pid)
 	switch(req.method){
@@ -42,6 +46,17 @@ app.get('/news',function(req,res) {
 									   		risus ut condimentum dictum, tortor urna placerat \
 									   		leo, eleifend dictum lacus purus at tortor.\
 									   		Integer pulvinar. Etiam eget leo eget turpis imperdiet dictum."]
+						   			},
+						   			{
+							   		date:{year:"2016",month:"June",day:"10"},
+							   		title:"Demise of IT industry",
+							   		para:["semper ac, venenatis at, facilisis ac,\
+									   		magna. Etiam ac enim. Sed pellentesque euismod\
+									   		elit. Mauris auctor ultrices massa. Praesent eget\
+									   		erat ut turpis aliquet viverra. Nullam consectetuer,\
+									   		risus ut condimentum dictum, tortor urna placerat \
+									   		leo, eleifend dictum lacus purus at tortor.\
+									   		Integer pulvinar. Etiam eget leo eget turpis imperdiet dictum."]
 						   			}
 					   			]	
 					   }
@@ -52,9 +67,7 @@ app.get('/gallery',function(req,res) {
 	res.render('gallery')
 });
 
-app.get('/front',function(req,res) {
-	res.render('front');
-});
+
 
 app.get('/:club_name/home', function (req, res) {
 	var club_name = req.params.club_name
@@ -74,15 +87,15 @@ app.get('/:club_name/news',(req,res)=>{
 											   		erat ut turpis aliquet viverra. Nullam consectetuer,\
 											   		risus ut condimentum dictum, tortor urna placerat \
 											   		leo, eleifend dictum lacus purus at tortor.\
-											   		Integer pulvinar. Etiam eget leo eget turpis imperdiet dictum."]
+											   		Integer pulvinar. Etiam eget leo eget turpis imperdiet\
+											   		 dic."]
 								   			}
 							   			]	
 							   }
 							)
 	// res.render('event/upload',{club_name:req.params.club_name,
-	// 						   news_list:news_list})	
-
-})
+	// 						   news_list:news_list}) 	
+	})
 
 
 app.post('/:club_name/event/upload',(req,res)=>{
