@@ -2,7 +2,7 @@ doctype html
 html
 	title event upload
 	body
-		form(method="POST")
+		form(method="POST",enctype="multipart/form-data")
 			label TITLE : &nbsp
 			input(name="title",type="text",value="title")
 			br
@@ -12,5 +12,8 @@ html
 			br
 			br
 			input(name="datetime",type="datetime-local")
+			br
+			br
+			input(name="photo",type='file')
 			input(type="submit",width="50",value="SUBMIT")
 		p sshizzle

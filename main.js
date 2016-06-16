@@ -1,6 +1,7 @@
 var express = require('express')
 var session = require('express-session')
 var bodyParser = require('body-parser')
+var multer = require('multer')
 var database = require('./db_controller.js')
 var db = database.db
 var util = require('util')
@@ -11,6 +12,7 @@ app.use(session({
 	secret:'mouse on the house',
 	resave:true
 }))
+app.use(multer({dest:'./static/resources/images/uploads/'}).single('photo'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static(__dirname+"/static"));
@@ -97,11 +99,21 @@ app.get('/:club_name/news',(req,res)=>{
 	// 						   news_list:news_list}) 	
 	})
 
+app.get('/:club_name/event/upload',(req,res)=>{
+	res.render('event/upload')
+})
 
 app.post('/:club_name/event/upload',(req,res)=>{
 	var club_name = req.params.club_name;
-	req.body.datetime = Date(req.body.datetime)
-	db.club.write(req.body,req.params.club_name,'events')
+	var event = {
+		title:req.body.title,
+		description:req.body.description,
+		datetime: Date(req.body.datetime),
+		image:{path:'/resources/images/uploads/'+req.file.filename,
+			   mimetype:req.file.mimetype
+			  }
+	}
+	db.club.write(event,club_name,'events')
 	util.log(db.club.events)
 	res.redirect('/'+club_name+'/event/upcoming')
 })
@@ -111,12 +123,12 @@ app.get('/:club_name/event/:query',function (req,res) {
 	var club_name = req.params.club_name;
 	var query = req.params.query;
 	var event_list = db.club.read(club_name,'events')
-	util.log(event_list)
 	delete event_list.name
 	delete event_list.datatype
 
-	res.render('upcomingevent',{club_name:club_name,
-								event_list:event_list})
+	res.render('event/index',{club_name:club_name,
+							event_list:event_list,
+							query:query})
 	}
 
 )
