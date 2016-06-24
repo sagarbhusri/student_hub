@@ -7,6 +7,28 @@ var db = database.db
 var util = require('util')
 var app = express();
 
+
+
+date_structure = (datetime)=>{
+	var date = datetime.split(' ');
+	var time = datetime[4].split(':');
+	return {
+		date:  {day_of_week:date[0],
+				month:date[1],
+				date:date[2],
+				year:date[3]},
+		time:  {hour:time[0],
+				minute:time[1],
+				second:time[2]},
+		timezone:date[5],
+		country:date[6]
+	}
+}
+
+function is_admin(club_name){
+	return true;
+}
+
 app.use(session({
 	saveUninitialized:false,
 	secret:'mouse on the house',
@@ -36,68 +58,61 @@ app.all('/',function(req,res) {
 	}
 });
 
-app.get('/news',function(req,res) {
-	res.render('news',{
-					   news_list:[{
-							   		date:{year:"2016",month:"June",day:"10"},
-							   		title:"Demise of IT industry",
-							   		para:["semper ac, venenatis at, facilisis ac,\
-									   		magna. Etiam ac enim. Sed pellentesque euismod\
-									   		elit. Mauris auctor ultrices massa. Praesent eget\
-									   		erat ut turpis aliquet viverra. Nullam consectetuer,\
-									   		risus ut condimentum dictum, tortor urna placerat \
-									   		leo, eleifend dictum lacus purus at tortor.\
-									   		Integer pulvinar. Etiam eget leo eget turpis imperdiet dictum."]
-						   			},
-						   			{
-							   		date:{year:"2016",month:"June",day:"10"},
-							   		title:"Demise of IT industry",
-							   		para:["semper ac, venenatis at, facilisis ac,\
-									   		magna. Etiam ac enim. Sed pellentesque euismod\
-									   		elit. Mauris auctor ultrices massa. Praesent eget\
-									   		erat ut turpis aliquet viverra. Nullam consectetuer,\
-									   		risus ut condimentum dictum, tortor urna placerat \
-									   		leo, eleifend dictum lacus purus at tortor.\
-									   		Integer pulvinar. Etiam eget leo eget turpis imperdiet dictum."]
-						   			}
-					   			]	
-					   }
-								)
-		});
 
 app.get('/gallery',function(req,res) {
 	res.render('gallery')
 });
 
 
-
 app.get('/:club_name/home', function (req, res) {
 	var club_name = req.params.club_name
 	//console.log(db.club.read(club_name))
+	data=db.club.read(club_name);
+	data['admin']=is_admin(club_name);
 	res.render('club_home',db.club.read(club_name))
 })
 
+
 app.get('/:club_name/news',(req,res)=>{
-	
-	res.render('news',{club_name:req.params.club_name,
-							   news_list:[{
-									   		date:{year:"2016",month:"June",day:"10"},
-									   		title:"Demise of IT industry",
-									   		para:["semper ac, venenatis at, facilisis ac,\
-											   		magna. Etiam ac enim. Sed pellentesque euismod\
-											   		elit. Mauris auctor ultrices massa. Praesent eget\
-											   		erat ut turpis aliquet viverra. Nullam consectetuer,\
-											   		risus ut condimentum dictum, tortor urna placerat \
-											   		leo, eleifend dictum lacus purus at tortor.\
-											   		Integer pulvinar. Etiam eget leo eget turpis imperdiet\
-											   		 dic."]
-								   			}
-							   			]	
-							   }
-							)
-	// res.render('event/upload',{club_name:req.params.club_name,
-	// 						   news_list:news_list}) 	
+	var club_name = req.params.club_name;
+	var news_list = db.club.read(club_name,'news');
+	delete news_list.club_name
+	delete news_list.datatype	
+	res.render('news/index',{club_name:club_name,
+					   admin:is_admin(club_name),
+					   news_list:news_list})
 	})
+
+
+app.get('/:club_name/news/upload',(req,res)=>{
+	res.render('news/upload');
+})
+app.post('/:club_name/news/upload',(req,res)=>{
+	var club_name = req.params.club_name;
+	// date_structure
+	// {
+	// 	date:  {day_of_week:date[0],
+	// 			month:date[1],
+	// 			date:date[2],
+	// 			year:date[3]},
+	// 	time:  {hour:time[0],
+	// 			minute:time[1],
+	// 			second:time[2]},
+	// 	timezone:date[5],
+	// 	country:date[6]
+	// }
+
+	var news = {
+		title:req.body.title,
+		para:req.body.para,
+		datetime:date_structure(Date())}
+	if (req.file)
+		news.image={path:'/resources/images/uploads/'+req.file.filename,
+			   		mimetype:req.file.mimetype}
+
+	db.club.write(news,club_name,'news')
+	res.redirect('/'+club_name+'/news')
+})
 
 app.get('/:club_name/event/upload',(req,res)=>{
 	res.render('event/upload')
@@ -108,13 +123,12 @@ app.post('/:club_name/event/upload',(req,res)=>{
 	var event = {
 		title:req.body.title,
 		description:req.body.description,
-		datetime: Date(req.body.datetime),
-		image:{path:'/resources/images/uploads/'+req.file.filename,
-			   mimetype:req.file.mimetype
-			  }
-	}
+		datetime: Date(req.body.datetime)}
+	if (req.file)
+		event.image={path:'/resources/images/uploads/'+req.file.filename,
+			   		 mimetype:req.file.mimetype}
+
 	db.club.write(event,club_name,'events')
-	util.log(db.club.events)
 	res.redirect('/'+club_name+'/event/upcoming')
 })
 
@@ -123,7 +137,7 @@ app.get('/:club_name/event/:query',function (req,res) {
 	var club_name = req.params.club_name;
 	var query = req.params.query;
 	var event_list = db.club.read(club_name,'events')
-	delete event_list.name
+	delete event_list.club_name
 	delete event_list.datatype
 
 	res.render('event/index',{club_name:club_name,

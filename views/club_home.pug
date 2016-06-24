@@ -74,14 +74,18 @@ body#myPage
         a.w3-hover-white(href='#') Gallery
       |  
       li.w3-hide-small
-        a.w3-hover-white(href='#') News
+        a.w3-hover-white(href='/'+club_name+'/news') News
       |  
       li.w3-hide-small
         a.w3-hover-white(href='#') Membership 
       | 
       li.w3-hide-small
-        a.w3-hover-white(href='#') Home   
-     
+        a.w3-hover-white(href='#') Home
+      if admin
+        li.w3-hide-small
+          a(href='/'+club_name+'/event/upload') Upload Event
+        li.w3-hide-small
+          a.w3-hover-white(href='/'+club_name+'/news/upload') Upload News
   // Automatic Slideshow Images
   .mySlides.w3-display-container
     img.testimg(src='/main1.jpg', alt='boat', style='width:100%;min-height:300px;max-height:400px;')

@@ -28,27 +28,29 @@ html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         br
         br
         | &#x9;
-        a.nav(href='#') ABOUT US
+        a.nav(href='/'+club_name+'/home') ABOUT US
         | &#x9;
-        a.nav(href='#') PREVIOUS EVENTS
+        a.nav(href='/'+club_name+'/event/previous') PREVIOUS EVENTS
         | &#x9;
-        a.nav(href='#') UPCOMING EVENTS
+        a.nav(href='/'+club_name+'/event/previous') UPCOMING EVENTS
         | &#x9;
+        if admin
+          a.nav(href='/'+club_name+'/event/upload') Upload event
+          | &#x9;
+          a.nav(href='/'+club_name+'/news/upload') Upload news
+          | &#x9;
         a.nav(href='#') MEMBERSHIP
         | &#x9;
         a.nav(href='#') HOME
     #main
       each article in news_list
-        .date
-          span.green
-            | #{article.date.month}
-            br
-            | #{article.date.day}
-        | &#x9;
-        .main
-          span.title= article.title
-          | #{article.para}
+          .date
+            span.green
+              | #{article.datetime.date.month}
+              br
+              | #{article.datetime.date.date}
           | &#x9;
-      span.credit
-        | &copy; 2006 Your Site | Template by 
-        a(href='http://www.demusdesign.com') DemusDesign
+          .main
+            span.title= article.title
+            | #{article.para}
+            | &#x9;

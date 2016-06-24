@@ -23,7 +23,7 @@ db={club:{  info:{},
 						club[DATATYPE][club_name] = {}
 					}
 				}
-				club[DATATYPE][club_name].name = club_name
+				club[DATATYPE][club_name].club_name = club_name
 				club[DATATYPE][club_name].datatype = DATATYPE
 				return club[DATATYPE][club_name]
 				},

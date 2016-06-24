@@ -1,5 +1,4 @@
 {
-    "name": "sufy",
     "datatype": "events",
     "0.27338970778509974": {
         "title": "title",
@@ -8,5 +7,6 @@
             "path": "/resources/images/uploads/6c061cde00e272e7c645e19e9036ec31",
             "mimetype": "image/png"
         }
-    }
+    },
+    "club_name": "sufy",
 }

@@ -51,22 +51,5 @@
             "image": "/main.jpg",
             "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
         }
-    ],
-    "events": {
-        "upcoming": [],
-        "previous": []
-    },
-    "new":[{
-                                            date:{year:"2016",month:"June",day:"10"},
-                                            title:"Demise of IT industry",
-                                            para:["semper ac, venenatis at, facilisis ac,\
-                                                    magna. Etiam ac enim. Sed pellentesque euismod\
-                                                    elit. Mauris auctor ultrices massa. Praesent eget\
-                                                    erat ut turpis aliquet viverra. Nullam consectetuer,\
-                                                    risus ut condimentum dictum, tortor urna placerat \
-                                                    leo, eleifend dictum lacus purus at tortor.\
-                                                    Integer pulvinar. Etiam eget leo eget turpis imperdiet\
-                                                     dic."]
-                                            }
-                                        ]   
+    ]
 }

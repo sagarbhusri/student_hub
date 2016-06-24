@@ -1,0 +1,21 @@
+{
+    "club_name": "sufy",
+    "datatype": "news",
+    "0.26015762495808303": {
+        "title": "title",
+        "para": "description",
+        "datetime": {
+            "date": {
+                "day_of_week": "Sat",
+                "month": "Jun",
+                "date": "25",
+                "year": "2016"
+            },
+            "time": {
+                "hour": "J"
+            },
+            "timezone": "GMT+0530",
+            "country": "(IST)"
+        }
+    }
+}
