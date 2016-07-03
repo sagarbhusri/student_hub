@@ -1,55 +1,51 @@
 {
     "name": "3ctech",
+    "slide":[
+            {
+                "image": "/main.jpg"
+            },
+            {
+                "image": "/main.jpg"
+            },
+            {
+                "image": "/main.jpg"
+            }
+    ],
     "team": [
         {
-            "image": "/main.jpg",
+            "image": "/20.jpg",
             "name": "Jatin Sachdeva",
             "role": "President"
         },
         {
-            "image": "/main.jpg",
-            "name": "Ashwini Kumar Singh",
+            "image": "/21.jpg",
+            "name": "Ashwini",
             "role": "Vice-President"
         },
         {
-            "image": "/main.jpg",
+            "image": "/22.jpg",
             "name": "Akansha Bakshi",
             "role": "General Secretary"
         },
         {
-            "image": "/main1.jpg",
-            "name": "Nikhil Gupta",
+            "image": "/23.jpg",
+            "name": "Nikita",
             "role": "Joint Secretary"
-        },
-        {
-            "image": "",
-            "name": "",
-            "role": ""
-        },
-        {
-            "image": "/main1.jpg",
-            "name": "Arjun Puri",
-            "role": "Treasurer"
-        },
-        {
-            "image": "/main1.jpg",
-            "name": "Ms. Jaspreet Kaur",
-            "role": "Faculty In-Charge"
         }
     ],
     "description": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry ",
     "portfolio": [
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_4.jpg",
+            "name": "Sufy & 3C-Tech in collaboration present a fantastic opportunity to increase your technical knowledge"
         },
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_5.jpg",
+            "name": "Let's Code : A coding Competition based on basic C language consisting of 2 rounds."
         },
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_6.jpg",
+            "name": "TECHIE-LOGONAMA by 3CTech . Date - 3/2/2015 and 4/2/2015"
         }
     ]
-}
+} 

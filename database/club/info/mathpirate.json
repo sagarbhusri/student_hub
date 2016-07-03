@@ -1,54 +1,39 @@
 {
     "team": [
         {
-            "image": "/main.jpg",
-            "name": "AMAN MADAAN",
+            "image": "/24.jpg",
+            "name": "ANAMIKA",
             "role": "President"
         },
         {
-            "image": "/main.jpg",
-            "name": "PRINCE PAHWA",
+            "image": "/25.jpg",
+            "name": "PRINCI",
             "role": "Vice-President"
         },
         {
-            "image": "/main.jpg",
-            "name": "GURKIRAT SINGH",
+            "image": "/26.jpg",
+            "name": "GAURAV",
             "role": "General secretary"
         },
         {
-            "image": "/main1.jpg",
-            "name": "BAIBHAV AGARWAL",
+            "image": "/27.jpg",
+            "name": "NISHA",
             "role": "Joint secretary"
-        },
-        {
-            "image": "",
-            "name": "",
-            "role": ""
-        },
-        {
-            "image": "/main1.jpg",
-            "name": "VISHAP MITTAL",
-            "role": "Treasurer"
-        },
-        {
-            "image": "/main1.jpg",
-            "name": "Dr.Tanu Sharma",
-            "role": "Faculty In-Charge"
         }
     ],
-    "description": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry ",
+    "description": "The pirate game is a simple mathematical game. It is a multi-player version of the ultimatum game.The pirate world's rules of distribution are thus: that the most senior pirate should propose a distribution of coins. The pirates, including the proposer, then vote on whether to accept this distribution. In case of a tie vote, the proposer has the casting vote. If the distribution is accepted, the coins are disbursed and the game ends.",
     "portfolio": [
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_16.jpg",
+            "name": "Do you think you have good knowledge about logos? Come and unleash your potential. The competition is all about the logos and related slogans. All you have to do is guess the logos or slogans."
         },
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_17.jpg",
+            "name": "Student's club Math Pirates is organising a workshop on Vedic Mathematics as per the demands of students on the account of National Science day, by Mr. Anuj Gupta, a renowned faculty from chandigarh having more than 9 years experience"
         },
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_18.jpg",
+            "name": "Ganit Erreur Organised by Department of Applied Sciences & Math Pirates (Chitkara University) Math Pirates Club & Department of Applied Science (Mathematics) had organised a Mathematical Quiz -Ganit Erreur on 18 Nov"
         }
     ],
     "name": "mathpirate"

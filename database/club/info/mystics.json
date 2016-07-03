@@ -1,54 +1,39 @@
 {
     "team": [
         {
-            "image": "/main.jpg",
+            "image": "/8.jpg",
             "name": "Abhijit K. Dey",
             "role": "President"
         },
         {
-            "image": "/main.jpg",
+            "image": "/9.jpg",
             "name": "Aniket Bhardwaj",
             "role": "Vice-President"
         },
         {
-            "image": "/main.jpg",
-            "name": "Himanshu Arorai",
+            "image": "/10.jpg",
+            "name": "Himanshu Arora",
             "role": "General secretary"
         },
         {
-            "image": "/main1.jpg",
-            "name": "Sajal Puri",
+            "image": "/11.jpg",
+            "name": "Sanjana Puri",
             "role": "Joint secretary"
-        },
-        {
-            "image": "",
-            "name": "",
-            "role": ""
-        },
-        {
-            "image": "/main1.jpg",
-            "name": "Varun Pratap Singh",
-            "role": "Treasurer"
-        },
-        {
-            "image": "/main1.jpg",
-            "name": "Ms. Sandhya Sharma",
-            "role": "Faculty In-Charge"
         }
     ],
     "description": "We believe that engineering is about attitude.It is not about degrees or certificates. We don’t care about your educational qualifications.You can be a student, professional, professor, scientist, housewife, doctor, painter, musician or even an alien.If you got that ‘make it better’ attitude, join us now!",
     "portfolio": [
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_10.jpg",
+            "name": "MYSTICS organised PCB DESIGNING Workshop held at the BEEE laboratory. The students of batch 2014 participated in the workshop. The participants learnt how to use PROTEUS and made their own circuits using it."
         },
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_11.jpg",
+            "name": "An innovational aptitude and technical quiz organised at chitkara University by MYSTICS"
         },
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_12.jpg",
+            "name": "Session on Cloud Technologies By Mr Rohit Gupta, Associate at Google.Venue : Chitkara Incubation Centre, SCO 10-11, Sector 4, Sector 4, Mansa Devi Complex, Panchkula"
         }
     ],
     "name": "mystics"

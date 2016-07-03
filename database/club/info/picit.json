@@ -1,54 +1,39 @@
 {
     "team": [
         {
-            "image": "/main.jpg",
+            "image": "/16.jpg",
             "name": "Vaibhav Bhasin",
             "role": "President"
         },
         {
-            "image": "/main.jpg",
+            "image": "/17.jpg",
             "name": "Anirudh Gupta",
             "role": "Vice President"
         },
         {
-            "image": "/main.jpg",
+            "image": "/18.jpg",
             "name": "Mukul Gupta",
             "role": "General Secretary"
         },
         {
-            "image": "/main1.jpg",
-            "name": "Basant Harjit Singh",
+            "image": "/19.jpg",
+            "name": "Basanti kaur",
             "role": "Joint Secretary"
-        },
-        {
-            "image": "",
-            "name": "",
-            "role": ""
-        },
-        {
-            "image": "/main1.jpg",
-            "name": "Ankush Sharma",
-            "role": "Treasurer"
-        },
-        {
-            "image": "/main1.jpg",
-            "name": "Mr. Chetan Sharma",
-            "role": "Faculty In-Charge"
         }
     ],
     "description": "The Only Photography Club in Chitkara University, Baddi.",
     "portfolio": [
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_13.jpg",
+            "name": "Charge your cameras... Get ready to show case your photography skills.. It's time to go around and click the best shots... Submit your best shots online and win exciting prizes by winning the competition..."
         },
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_14.jpg",
+            "name": "So here the competition begins for the participants of Kasauli. Soon there best shots submitted to us will be uploaded here. They have time till Frtiday (22nd April) to get maximum likes, shares and comments"
         },
         {
-            "image": "/main.jpg",
-            "name": "3ctech ( Chitkara Consortium of Computer Technocrats ) is the main technical club of Chitkara University that handles all the technical activities and events being carried out in the university. Its a great opportunity for all the budding engineers to explore themselves to a great extent. Mission is To help students become technically strong and make them learn the needs of the industry "
+            "image": "/sufy_151.jpg",
+            "name": "Chance to win big.. participate... limited time... hurry up...."
         }
     ],
     "name": "picit"
