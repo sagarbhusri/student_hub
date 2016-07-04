@@ -1,13 +1,13 @@
 {
      "slide":[
             {
-                "image": "/main.jpg"
+                "image": "/g.jpg"
             },
             {
-                "image": "/main.jpg"
+                "image": "/h.jpg"
             },
             {
-                "image": "/main.jpg"
+                "image": "/i.jpg"
             }
     ],
     "team": [
@@ -36,14 +36,17 @@
     "portfolio": [
         {
             "image": "/sufy_13.jpg",
+            "name1": "Wander shot",
             "name": "Charge your cameras... Get ready to show case your photography skills.. It's time to go around and click the best shots... Submit your best shots online and win exciting prizes by winning the competition..."
         },
         {
             "image": "/sufy_14.jpg",
+            "name1": "Photo Walk ",
             "name": "So here the competition begins for the participants of Kasauli. Soon there best shots submitted to us will be uploaded here. They have time till Frtiday (22nd April) to get maximum likes, shares and comments"
         },
         {
             "image": "/sufy_151.jpg",
+            "name1": "The short filmography",
             "name": "Chance to win big.. participate... limited time... hurry up...."
         }
     ],

@@ -1,13 +1,13 @@
 {
      "slide":[
             {
-                "image": "/main.jpg"
+                "image": "/m.jpg"
             },
             {
-                "image": "/main.jpg"
+                "image": "/n.jpg"
             },
             {
-                "image": "/main.jpg"
+                "image": "/o.jpg"
             }
     ],
     "team": [
@@ -36,14 +36,17 @@
     "portfolio": [
         {
             "image": "/sufy_10.jpg",
+            "name1": "PCB Desigining",
             "name": "MYSTICS organised PCB DESIGNING Workshop held at the BEEE laboratory. The students of batch 2014 participated in the workshop. The participants learnt how to use PROTEUS and made their own circuits using it."
         },
         {
             "image": "/sufy_11.jpg",
+            "name1": "Technical Quiz",
             "name": "An innovational aptitude and technical quiz organised at chitkara University by MYSTICS"
         },
         {
             "image": "/sufy_12.jpg",
+            "name1": "Cloud Technologies",
             "name": "Session on Cloud Technologies By Mr Rohit Gupta, Associate at Google.Venue : Chitkara Incubation Centre, SCO 10-11, Sector 4, Sector 4, Mansa Devi Complex, Panchkula"
         }
     ],

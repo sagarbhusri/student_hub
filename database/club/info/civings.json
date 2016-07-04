@@ -1,24 +1,13 @@
 {
      "slide":[
             {
-                "image": "/main.jpg"
+                "image": "/j.jpg"
             },
             {
-                "image": "/main.jpg"
+                "image": "/k.jpg"
             },
             {
-                "image": "/main.jpg"
-            }
-    ],
-     "slide":[
-            {
-                "image": "/main.jpg"
-            },
-            {
-                "image": "/main.jpg"
-            },
-            {
-                "image": "/main.jpg"
+                "image": "/l.jpg"
             }
     ],
     "team": [
@@ -49,7 +38,7 @@
     "portfolio": [  
         {
             "image": "/sufy_1.jpg",
-            "name1": "Con Te",
+            "name1": "Con Test",
             "name": "Test of a construction material made of a mixture of cement, sand, stone, and water that hardens to a stone like mass"
         },
         {

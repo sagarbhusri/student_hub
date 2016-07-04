@@ -1,15 +1,16 @@
 {
      "slide":[
             {
-                "image": "/4.jpg"
+                "image": "/p.jpg"
             },
             {
-                "image": "/main.jpg"
+                "image": "/q.jpg"
             },
             {
-                "image": "/main.jpg"
+                "image": "/r.jpg"
             }
     ],
+
     "team": [
         {
             "image": "/4.jpg",
@@ -32,18 +33,22 @@
             "role": "Joint  Secretary"
         }
     ],
+    
     "description": "The Sufy Club of Chitkara University is a literary club involved in variety of activities aimed at building up the confidence and grooming the talents of students in facing various interpersonal activities and competitions. It is a voluntary association of students interested in writing, speaking and expressing their original views and ideas on the various platforms.",
     "portfolio": [
         {
             "image": "/sufy_7.jpg",
+            "name1": "Spelling Bee",
             "name": "It doesn't matter if you're good with words or not,give it a chance.You never know you might spell your way to Glory with these lucrative Cash prizes! CLUB SUFY is organising A Spelling Bee competition on the 6th of April 2016."
         },
         {
             "image": "/sufy_8.jpg",
+            "name1": "Declamation",
             "name": "S.U.F.Y. is going to organize a declamation competition on Tuesday i.e. 3rd November 2015 as per the details given :-Topic : “Communalism a threat to India’s Unity”. Time : 5th hour Venue :102"
         },
         {
             "image": "/sufy_9.jpg",
+            "name1": "Talk by Mr. Pankaj Asija",
             "name": "Presents India`s youngest motivator Mr. Pankaj Asija at Chitkara University on World Students` day. He will teach time and stress management, communication skills"
         }
     ]

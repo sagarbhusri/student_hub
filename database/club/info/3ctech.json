@@ -2,13 +2,13 @@
     "name": "3ctech",
     "slide":[
             {
-                "image": "/main.jpg"
+                "image": "/a.jpg"
             },
             {
-                "image": "/main.jpg"
+                "image": "/b.jpg"
             },
             {
-                "image": "/main.jpg"
+                "image": "/c.jpg"
             }
     ],
     "team": [
@@ -37,14 +37,17 @@
     "portfolio": [
         {
             "image": "/sufy_4.jpg",
+            "name1": "Techie Talks",
             "name": "Sufy & 3C-Tech in collaboration present a fantastic opportunity to increase your technical knowledge"
         },
         {
             "image": "/sufy_5.jpg",
+            "name1": "Let's Code",
             "name": "Let's Code : A coding Competition based on basic C language consisting of 2 rounds."
         },
         {
             "image": "/sufy_6.jpg",
+            "name1": "Techie Logonama",
             "name": "TECHIE-LOGONAMA by 3CTech . Date - 3/2/2015 and 4/2/2015"
         }
     ]
