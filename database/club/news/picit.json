@@ -1,0 +1,21 @@
+{
+    "club_name": "picit",
+    "datatype": "news",
+    "0.5353845870287328": {
+        "title": "picit",
+        "para": "working good",
+        "datetime": {
+            "date": {
+                "day_of_week": "Mon",
+                "month": "Jul",
+                "date": "04",
+                "year": "2016"
+            },
+            "time": {
+                "hour": "J"
+            },
+            "timezone": "GMT-0700",
+            "country": "(Pacific"
+        }
+    }
+}

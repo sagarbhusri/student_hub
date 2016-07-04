@@ -1,0 +1,104 @@
+doctype html
+html
+  title contact us
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+  link(rel='stylesheet', href='http://www.w3schools.com/lib/w3-theme-black.css')
+  link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css')
+  body#myPage
+    // Side Navigation on click
+    nav.w3-sidenav.w3-white.w3-card-2.w3-animate-left(style='display:none;z-index:2')
+      a.w3-closenav.w3-xxxlarge.w3-text-teal(href='javascript:void(0)', onclick='w3_close()')
+        | Close
+        i.fa.fa-remove
+      a(href='javascript:void(0)') Link 1
+      a(href='javascript:void(0)') Link 2
+      a(href='javascript:void(0)') Link 3
+      a(href='javascript:void(0)') Link 4
+      a(href='javascript:void(0)') Link 5
+    // Navbar
+    .w3-top
+      ul.w3-navbar.w3-theme-d2.w3-left-align.w3-large
+        li.w3-hide-medium.w3-hide-large.w3-opennav.w3-right
+          a.w3-hover-white.w3-large.w3-theme-d2(href='javascript:void(0);', onclick='openNav()')
+            i.fa.fa-bars
+        li
+          a.w3-teal(href='/front/')
+            i.fa.fa-home.w3-margin-right
+            | Home
+        li.w3-hide-small.w3-dropdown-hover
+          a.w3-hover-white(href='#', title='Notifications')
+            | Clubs 
+            i.fa.fa-caret-down
+          .w3-dropdown-content.w3-white.w3-card-4
+            a(href='/sufy/home') SUFY
+            a(href='/mystics/home') MYSTICS
+            a(href='/civings/home') CIVINGS
+            a(href='/picit/home') PIC IT
+            a(href='/3ctech/home') 3C TECH
+            a(href='/mathpirate/home') MATH PIRATES
+        li.w3-hide-small
+          a.w3-hover-white(href='/gallery/') Gallery
+        li.w3-hide-small.w3-right
+          a.w3-hover-teal(href='#', title='Search')
+            i.fa.fa-search
+    // Container
+    .w3-container.w3-padding-hor-64.w3-theme-l5
+      .w3-row
+        .w3-col.m5
+          .w3-padding-hor-16
+            span.w3-xlarge.w3-border-teal.w3-bottombar Contact Us
+          h3 Address
+          p
+            i.fa.fa-map-marker.w3-text-teal.w3-xlarge
+            |   Chitkara University,Himachal Pradesh :
+            br
+            | Pinjore-Barotiwala National Highway (NH-21A)
+            br
+            | Himachal Pradesh – 174 103
+          p
+            i.fa.fa-phone.w3-text-teal.w3-xlarge
+            |   +91 9882497907
+          p
+            i.fa.fa-envelope-o.w3-text-teal.w3-xlarge
+            |   info@chitkarauniversity.edu.in
+    // Footer
+    footer.w3-container.w3-padding-hor-32.w3-theme-d1.w3-center
+      h4 Follow Us
+      a.w3-btn-floating.w3-teal(href='javascript:void(0)', title='Facebook')
+        i.fa.fa-facebook
+      a.w3-btn-floating.w3-teal(href='javascript:void(0)', title='Twitter')
+        i.fa.fa-twitter
+      a.w3-btn-floating.w3-teal(href='javascript:void(0)', title='Google +')
+        i.fa.fa-google-plus
+      a.w3-btn-floating.w3-teal.w3-hide-small(href='javascript:void(0)', title='Linkedin')
+        i.fa.fa-linkedin
+      p
+        | Powered by 
+        a(href='http://www.w3schools.com/w3css/default.asp', target='_blank') w3.css
+      .w3-tooltip.w3-right(style='position:relative;bottom:100px;z-index:1;')
+        span.w3-text.w3-padding.w3-teal.w3-hide-small Go To Top
+        a.w3-btn.w3-theme(href='#myPage')
+          span.w3-xlarge
+            i.fa.fa-chevron-circle-up
+    // Script For Side Navigation
+    script.
+      function w3_open() {
+      document.getElementsByClassName("w3-sidenav")[0].style.width = "300px";
+      document.getElementsByClassName("w3-sidenav")[0].style.textAlign = "center";
+      document.getElementsByClassName("w3-sidenav")[0].style.fontSize = "40px";
+      document.getElementsByClassName("w3-sidenav")[0].style.paddingTop = "10%";
+      document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+      }
+      function w3_close() {
+      document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+      }
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      } else {
+      x.className = x.className.replace(" w3-show", "");
+      }
+      }

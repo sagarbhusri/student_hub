@@ -12,46 +12,27 @@ body#myPage
       | Close
       i.fa.fa-remove
     |   
-    a(href='javascript:void(0)') Gallery
+    a(href='/gallery/') Gallery
     | &#x9;&#x9;
     |   
-    a(href='/sufy/home', target='_blank') SUFY
+    a(href='/sufy/home') SUFY
     | &#x9;&#x9;
     |   
-    a(href='/isotope/home', target='_blank') ISOTOPE
+    a(href='/picit/home') PIC-IT
     | &#x9;&#x9;
-    |   
-    a(href='/cutc/home', target='_blank') CUT-C
-    | &#x9;&#x9;
-    |   
-    a(href='/cuarcs/home', target='_blank') CU ARCS
-    |   
-    a(href='/picit/home', target='_blank') PIC-IT
-    | &#x9;&#x9;
-    |   
-    a(href='/staccatos/home', target='_blank') STACCATOS
-    | &#x9;&#x9;
-    |   
-    a(href='/mystics/home', target='_blank') MYSTICS
-    | &#x9;&#x9;
-    |   
-    a(href='/euphony/home', target='_blank') EUPHONY
     |  
-    a(href='/iete/home', target='_blank') IETE
+    a(href='/mystics/home') MYSTICS
     | &#x9;&#x9;
-    |   
-    a(href='/csi/home', target='_blank') CSI
-    | &#x9;&#x9;
-    |   
-    a(href='/mathpirate/home', target='_blank') MATH PIRATE
-    | &#x9;&#x9;
-    |   
-    a(href='/civings/home', target='_blank') CIVINGS
     |  
-    a(href='/3ctech/home', target='_blank') 3C-TECH
+    a(href='/mathpirate/home') MATH PIRATE
+    | &#x9;&#x9;
+    |   
+    a(href='/civings/home') CIVINGS
+    |  
+    a(href='/3ctech/home') 3C-TECH
     |  
     |   
-    a(href='/1.html') BACK
+    a(href='/front/') BACK
   // Navbar
   .w3-top
     ul.w3-navbar.w3-theme-d2.w3-left-align.w3-large
@@ -63,24 +44,21 @@ body#myPage
         a.w3-teal(href='/'+club_name+'/event')
           i.fa.fa-home.w3-margin-right
           | About Us
+      |  
+      li.w3-hide-small
+        a.w3-hover-white(href='/front/') Home
+      |  
+      li.w3-hide-small
+        a.w3-hover-white(href='/gallery/') Gallery
+      |  
+      li.w3-hide-small
+        a.w3-hover-white(href='/'+club_name+'/news') News
       |   
       li.w3-hide-small
         a(href='/'+club_name+'/event/previous') Previous Events
       |   
       li.w3-hide-small
         a(href='/'+club_name+'/event/upcoming') Upcoming Events
-      |  
-      li.w3-hide-small
-        a.w3-hover-white(href='#') Gallery
-      |  
-      li.w3-hide-small
-        a.w3-hover-white(href='/'+club_name+'/news') News
-      |  
-      li.w3-hide-small
-        a.w3-hover-white(href='#') Membership 
-      | 
-      li.w3-hide-small
-        a.w3-hover-white(href='#') Home
       if admin
         li.w3-hide-small
           a(href='/'+club_name+'/event/upload') Upload Event

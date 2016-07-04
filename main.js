@@ -44,6 +44,9 @@ app.set('views',__dirname+'/views')
 app.get('/front',function(req,res) {
 	res.render('front');
 });
+app.get('/contact_us',function(req,res) {
+	res.render('contact_us');
+});
 
 app.all('/',function(req,res) {
 	util.log("PID: "+process.pid)
