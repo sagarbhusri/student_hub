@@ -3,7 +3,7 @@
     "datatype": "events",
     "0.8504628990360263": {
         "title": "gakhar",
-        "datetime": "Mon Jul 04 2016 20:11:54 GMT+0530 (India Standard Time)",
+        "datetime": {"string":"Mon Jul 04 2016 20:11:54 GMT+0530 (India Standard Time)"},
         "image": {
             "path": "/resources/images/uploads/3422f3cea51a06a860fb27fb4a7b5868",
             "mimetype": "image/jpeg"

@@ -1,6 +1,6 @@
 doctype html
 html
-  title UpcomingEvent
+  title= query+' event'
   meta(name='viewport', content='width=device-width, initial-scale=1')
   link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
   link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
@@ -36,13 +36,13 @@ html
           a.w3-hover-white(href='#') Membership 
         |  
         li.w3-hide-small
-          a.w3-hover-white(href='#') Home 
+          a.w3-hover-white(href='/'+club_name+'/home') Home 
     // Navbar on small screens
     // Page content
     .w3-content(style='max-width:1800px;margin-top:46px')
       .w3-row-padding.w3-padding-hor-32(style='margin:0 -16px')
         each event in event_list
-          if query == 'upcoming' && (event.datetime > Date())
+          if query == 'upcoming' && (new Date(event.datetime.string) > new Date())
             .w3-third.w3-margin-bottom
               img.w3-hover-opacity(src=''+event.image.path, alt='Norway', style='width:100%')
               |           
@@ -50,12 +50,12 @@ html
                 p
                   b= event.title
                 |             
-                p.w3-opacity= event.datetime
+                p.w3-opacity= event.datetime.string
                 |             
                 p= event.description
                 |             
                 button.w3-btn.w3-margin-bottom(onclick="document.getElementById('ticketModal').style.display='block'") Register Now
-          else if query == 'previous' && (event.datetime < Date())
+          else if query == 'previous' && (new Date(event.datetime.string) < new Date())
             .w3-third.w3-margin-bottom
               img.w3-hover-opacity(src=''+event.image.path, alt='Norway', style='width:100%')
               |           
@@ -63,7 +63,7 @@ html
                 p
                   b= event.title
                 |             
-                p.w3-opacity= event.datetime
+                p.w3-opacity= event.datetime.string
                 |             
                 p= event.description
                 |             

@@ -5,6 +5,7 @@
         "title": "picit",
         "para": "working good",
         "datetime": {
+            "string":"Mon Jul 04 2016 20:11:54 GMT-0700 (Pacific)",
             "date": {
                 "day_of_week": "Mon",
                 "month": "Jul",

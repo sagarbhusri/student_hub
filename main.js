@@ -2,6 +2,7 @@ var express = require('express')
 var session = require('express-session')
 var bodyParser = require('body-parser')
 var multer = require('multer')
+var dateformat = require('dateformat')
 var database = require('./db_controller.js')
 var db = database.db
 var util = require('util')
@@ -10,9 +11,18 @@ var app = express();
 
 
 date_structure = (datetime)=>{
+	console.log(datetime)
+	if (datetime == '')
+		datetime = new Date()
+	else{
+		datetime = new Date(datetime.split('T')[0]+" "+datetime.split('T')[1])
+	}
+	console.log(datetime)
+	datetime = datetime.toString()
 	var date = datetime.split(' ');
-	var time = datetime[4].split(':');
+	var time = date[4].split(':');
 	return {
+		string:datetime,
 		date:  {day_of_week:date[0],
 				month:date[1],
 				date:date[2],
@@ -123,10 +133,13 @@ app.get('/:club_name/event/upload',(req,res)=>{
 
 app.post('/:club_name/event/upload',(req,res)=>{
 	var club_name = req.params.club_name;
+	console.log(req.body)
 	var event = {
 		title:req.body.title,
 		description:req.body.description,
-		datetime: Date(req.body.datetime)}
+		datetime: date_structure(req.body.datetime),
+		image:{path:'#'}
+	}
 	if (req.file)
 		event.image={path:'/resources/images/uploads/'+req.file.filename,
 			   		 mimetype:req.file.mimetype}
@@ -142,7 +155,13 @@ app.get('/:club_name/event/:query',function (req,res) {
 	var event_list = db.club.read(club_name,'events')
 	delete event_list.club_name
 	delete event_list.datatype
-
+	console.log(event_list)
+	for(event in event_list){
+		if(event.datetime){
+		console.log(event.datetime.string)
+		console.log(event.datetime.string > Date().toString())
+		}
+	}
 	res.render('event/index',{club_name:club_name,
 							event_list:event_list,
 							query:query})

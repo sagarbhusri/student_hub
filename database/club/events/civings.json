@@ -3,7 +3,7 @@
     "datatype": "events",
     "0.7733961534705378": {
         "title": "kush",
-        "datetime": "Sun Jul 03 2016 10:07:59 GMT-0700 (Pacific Daylight Time)",
+        "datetime": {"String":"Sun Jul 03 2016 10:07:59 GMT-0700 (Pacific Daylight Time)"},
         "image": {
             "path": "/resources/images/uploads/6b48feff16cdc71aaa206862c4fba7b3",
             "mimetype": "application/pdf"

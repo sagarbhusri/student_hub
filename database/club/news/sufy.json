@@ -5,6 +5,7 @@
         "title": "title",
         "para": "description",
         "datetime": {
+            "string":"Sat Jun 25 2016 17:35:54 GMT+0530 (India Standard Time)",
             "date": {
                 "day_of_week": "Sat",
                 "month": "Jun",
@@ -22,6 +23,7 @@
         "title": "sagae",
         "para": "map",
         "datetime": {
+            "string":"Mon Jul 04 2016 14:31:54 GMT-0700 (Pacific)",
             "date": {
                 "day_of_week": "Mon",
                 "month": "Jul",

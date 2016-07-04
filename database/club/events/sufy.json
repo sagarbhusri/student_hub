@@ -1,20 +1,26 @@
 {
-    "0.923980384560692": {
-        "title": "sufy",
-        "datetime": "Mon Jul 04 2016 01:46:56 GMT-0700 (Pacific Daylight Time)",
-        "image": {
-            "path": "/resources/images/uploads/e9a7cf153eca99c81cf2727e821fe4ec",
-            "mimetype": "image/jpeg"
-        }
-    },
     "club_name": "sufy",
     "datatype": "events",
-    "0.46506734253530624": {
-        "title": "sagar",
-        "datetime": "Mon Jul 04 2016 01:50:45 GMT-0700 (Pacific Daylight Time)",
+    "0.08244814001955092": {
+        "title": "title",
+        "datetime": {
+            "string": "Sat Jul 10 2016 11:01:00 GMT+0530 (IST)",
+            "date": {
+                "day_of_week": "Sat",
+                "month": "Jul",
+                "date": "09",
+                "year": "2016"
+            },
+            "time": {
+                "hour": "11",
+                "minute": "01",
+                "second": "00"
+            },
+            "timezone": "GMT+0530",
+            "country": "(IST)"
+        },
         "image": {
-            "path": "/resources/images/uploads/37b5d5c22cd0c31902fa4a5aedcdb6e3",
-            "mimetype": "image/jpeg"
+            "path": "#"
         }
     }
 }
