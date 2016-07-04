@@ -41,7 +41,7 @@ body#myPage
           i.fa.fa-bars
       |   
       li
-        a.w3-teal(href='/'+club_name+'/event')
+        a.w3-teal(href='/'+club_name+'/home')
           i.fa.fa-home.w3-margin-right
           | About Us
       |  
@@ -65,18 +65,10 @@ body#myPage
         li.w3-hide-small
           a.w3-hover-white(href='/'+club_name+'/news/upload') Upload News
   // Automatic Slideshow Images
-  .mySlides.w3-display-container
-    img.testimg(src='/main1.jpg', alt='boat', style='width:100%;min-height:300px;max-height:400px;')
-    |  
-    
-  |   
-  .mySlides.w3-display-container
-    img.testimg(src='/main.jpg', alt='boat', style='width:100%;min-height:300px;max-height:400px;')
-   
-  |   
-  .mySlides.w3-display-container
-    img.testimg(src='/main2.jpg', alt='boat', style='width:100%;min-height:300px;max-height:400px;')
-    
+  each member in slide
+    .mySlides.w3-display-container
+      img.testimg(src= member.image, alt='boat', style='width:100%;min-height:300px;max-height:400px;')
+      
   // Modal
   #id01.w3-modal.w3-animate-opacity
     .w3-modal-content.w3-card-8.w3-animate-top
@@ -88,7 +80,7 @@ body#myPage
         |         
         h5
           | Because we can 
-          i.fa.fa-smile-o
+          i.fa.fa-smile
       |       
       .w3-container
         p Cool huh? Ok, enough teasing around..

@@ -10,6 +10,17 @@
                 "image": "/main.jpg"
             }
     ],
+     "slide":[
+            {
+                "image": "/main.jpg"
+            },
+            {
+                "image": "/main.jpg"
+            },
+            {
+                "image": "/main.jpg"
+            }
+    ],
     "team": [
         {
             "image": "/12.jpg",

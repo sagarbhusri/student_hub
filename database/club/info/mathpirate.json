@@ -1,4 +1,15 @@
 {
+     "slide":[
+            {
+                "image": "/main.jpg"
+            },
+            {
+                "image": "/main.jpg"
+            },
+            {
+                "image": "/main.jpg"
+            }
+    ],
     "team": [
         {
             "image": "/24.jpg",

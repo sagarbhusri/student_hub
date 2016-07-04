@@ -32,16 +32,9 @@ html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         | &#x9;
         a.nav(href='/'+club_name+'/event/previous') PREVIOUS EVENTS
         | &#x9;
-        a.nav(href='/'+club_name+'/event/previous') UPCOMING EVENTS
+        a.nav(href='/'+club_name+'/event/upcoming') UPCOMING EVENTS
         | &#x9;
-        if admin
-          a.nav(href='/'+club_name+'/event/upload') Upload event
-          | &#x9;
-          a.nav(href='/'+club_name+'/news/upload') Upload news
-          | &#x9;
-        a.nav(href='#') MEMBERSHIP
-        | &#x9;
-        a.nav(href='#') HOME
+        a.nav(href='/front') HOME
     #main
       each article in news_list
           .date
