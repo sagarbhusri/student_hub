@@ -1,0 +1,39 @@
+drop table XBBNHM0_users_api;
+create table XBBNHM0_users_api
+(
+userId varchar(20) primary key,
+userRole varchar(20),
+userFirstName varchar(20) not null,
+userLastName varchar(20) ,
+userContact number(10) not null,
+userMail varchar(40),
+userGender varchar(10)  check (userGender='male' or userGender='female'),
+userDateOfBirth date,
+userBatch number(4) ,
+userStream varchar(20) ,
+userAddress varchar(30),
+userCurrentAddress varchar(30),
+userDateOfJoining date,
+userIsHostel varchar(20)  check (userIsHostel ='yes'or userIsHostel= 'no') ,
+userIsDayscholar varchar(20)  check (userIsDayscholar ='yes' or userIsDayscholar ='no'),
+userPassword varchar(20) not null
+);
+insert into XBBNHM0_USERS_API(userId,userRole,userFirstName,userLastName,userContact,userMail,userGender,userDateOfBirth,userBatch,userStream,userAddress,userCurrentAddress,userDateOfJoining,userIsHostel,userIsDayscholar,userPassword)
+VALUES('S201','STUDENT','john','david',8870236132,'john.dd@hotmail.com','male',to_date('19950621','YYYYMMDD'),2013,'CSE','xyz delhi','chandigarh',to_date('20140815','YYYYMMDD'),'yes','no','S201');
+
+insert into XBBNHM0_USERS_API(userId,userRole,userFirstName,userLastName,userContact,userMail,userGender,userDateOfBirth,userBatch,userStream,userAddress,userCurrentAddress,userDateOfJoining,userIsHostel,userIsDayscholar,userPassword)
+VALUES('S202','STUDENT','jerry','salvatore',9871236132,'stefan.sal@hotmail.com','male',to_date('19960725','YYYYMMDD'),2013,'ECE','xyz Pune','chandigarh',to_date('20140815','YYYYMMDD'),'yes','no','S202');
+
+insert into XBBNHM0_USERS_API(userId,userRole,userFirstName,userLastName,userContact,userMail,userGender,userDateOfBirth,userBatch,userStream,userAddress,userCurrentAddress,userDateOfJoining,userIsHostel,userIsDayscholar,userPassword)
+VALUES('S203','STUDENT','Nina','Dobrev',9871236512,'nina.dob@hotmail.com','female',to_date('19951225','YYYYMMDD'),2012,'CSE','xyz delhi','panchkula',to_date('20120815','YYYYMMDD'),'no','yes','S203');
+
+insert into XBBNHM0_USERS_API(userId,userRole,userFirstName,userLastName,userContact,userMail,userGender,userDateOfBirth,userBatch,userStream,userAddress,userCurrentAddress,userDateOfJoining,userIsHostel,userIsDayscholar,userPassword)
+VALUES('S205','STUDENT','pna','singh',9871211132,'pna.sal@hotmail.com','male',to_date('19930211','YYYYMMDD'),2011,'CSE','xyz noida','zirakpur',to_date('20128910','YYYYMMDD'),'yes','no','S204');
+
+
+
+select * from xbbnhm0_users_api;
+
+select * from XBBNHM0_users_api where userId= 'S201';
+
+commit;
